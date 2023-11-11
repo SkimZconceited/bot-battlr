@@ -37,13 +37,13 @@ function App() {
       if (bot.id === doc.id) return;
     }
     setArmy([doc, ...army])
-    console.log(army)
+    // console.log(army)
   }
 
   function removeFromArmy(doc) {
     const botArmy = army.filter((bot) => bot.id === doc.id ? false : true)
     setArmy(botArmy)
-    console.log(doc, 'removed from army')
+    // console.log(doc, 'removed from army')
   }
 
   return (
